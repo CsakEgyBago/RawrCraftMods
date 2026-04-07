@@ -2,9 +2,78 @@
 ## 1.20.1 Forge
 
 ---
+
 # RawrCraft Mod Pack — Mod Guide
 
-A quick overview of everything in the pack. No major spoilers — just enough to know what to expect.
+A quick overview of everything in the pack, plus installation instructions for both official and cracked Minecraft.
+
+---
+
+## 📦 Installation Guide — Official Minecraft (Mojang/Microsoft Account)
+
+### Requirements
+- Minecraft Java Edition (purchased from [minecraft.net](https://minecraft.net))
+- Java 17 or newer — download from [adoptium.net](https://adoptium.net)
+
+### Steps
+
+**1. Install Forge**
+- Go to [files.minecraftforge.net](https://files.minecraftforge.net) and download the **1.20.1** installer (Recommended build).
+- Run the `.jar` file: double-click it or run `java -jar forge-installer.jar`
+- Select **"Install client"** and hit OK.
+- Forge will appear as a new profile in your Minecraft Launcher.
+
+**2. Install the mods**
+- Open your `.minecraft` folder:
+  - Windows: press `Win + R`, type `%appdata%\.minecraft`
+  - Mac: `~/Library/Application Support/minecraft`
+  - Linux: `~/.minecraft`
+- If it doesn't exist, create a folder called `mods` inside it.
+- Copy all the `.jar` files from the RawrCraft zip into the `mods` folder.
+
+**3. Launch**
+- Open the official Minecraft Launcher.
+- Select the **Forge 1.20.1** profile from the dropdown and hit Play.
+- First launch will take a while — Forge is loading all the mods.
+
+> 💡 **Tip:** Give Minecraft more RAM. In the launcher, go to your Forge profile → More Options → JVM Arguments and change `-Xmx2G` to `-Xmx4G` or more. This pack needs it.
+
+---
+
+## 🏴‍☠️ Installation Guide — Cracked Minecraft
+
+> This guide assumes you have a cracked launcher already. Popular options include **Prism Launcher** (with offline mode), **SKLauncher**, or **TLauncher**.
+
+### Requirements
+- A cracked launcher that supports Forge profiles
+- Java 17 or newer — download from [adoptium.net](https://adoptium.net)
+
+### Steps
+
+**1. Install Forge via your launcher**
+
+Most cracked launchers let you install Forge directly:
+- In **Prism Launcher**: Add Instance → select version `1.20.1` → check "Install Forge" → pick the recommended build.
+- In **SKLauncher / TLauncher**: Create a new profile, select version `1.20.1-Forge`, and let it download.
+
+If your launcher doesn't support this, download the Forge installer from [files.minecraftforge.net](https://files.minecraftforge.net), run it, and point your launcher at the installed version manually.
+
+**2. Install the mods**
+- Find your launcher's game directory. This varies by launcher — look in Settings for a "Game Directory" or "Instance Folder" path.
+- Inside it, open (or create) the `mods` folder.
+- Copy all the `.jar` files from the RawrCraft zip into that `mods` folder.
+
+**3. Launch**
+- Select your Forge 1.20.1 profile and launch.
+- Same as above — first launch will be slow while mods load.
+
+> ⚠️ **Multiplayer note:** To join the RawrCraft server you will need a username set in your launcher. Any username works for an offline server, but ask the server admin if they have online-mode enabled — cracked accounts cannot join online-mode servers.
+
+---
+
+## 📖 Mod Guide
+
+No major spoilers — just enough to know what to expect.
 
 ---
 
