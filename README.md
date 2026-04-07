@@ -1,5 +1,5 @@
-###dinosaursrawr.dat.airforce
-###1.20.1 Forge
+## dinosaursrawr.dat.airforce
+## 1.20.1 Forge
 
 ---
 # RawrCraft Mod Pack — Mod Guide
