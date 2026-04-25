@@ -20,16 +20,19 @@ jobs:
       - name: Parse release version from commit message
         shell: bash
         run: |
-          if [[ "$COMMIT_MESSAGE" =~ ^Release[[:space:]]+([0-9]+\.[0-9]+\.[0-9]+)$ ]]; then
-            echo "VERSION=${BASH_REMATCH[1]}" >> "$GITHUB_ENV"
-            echo "TITLE=Release ${BASH_REMATCH[1]}" >> "$GITHUB_ENV"
-            echo "ZIP_NAME=mods-${BASH_REMATCH[1]}.zip" >> "$GITHUB_ENV"
+          match="$(printf '%s' "$COMMIT_MESSAGE" | tr -d '\r' | grep -Eo 'Release[[:space:]]+[0-9]+\.[0-9]+\.[0-9]+\.?' | head -n 1 || true)"
+          if [ -n "$match" ]; then
+            version="$(printf '%s' "$match" | grep -Eo '[0-9]+\.[0-9]+\.[0-9]+' | head -n 1)"
+            echo "VERSION=$version" >> "$GITHUB_ENV"
+            echo "TITLE=Release $version" >> "$GITHUB_ENV"
+            echo "ZIP_NAME=mods-$version.zip" >> "$GITHUB_ENV"
           else
-            echo "Commit message must be exactly: Release x.y.z" >&2
-            exit 1
+            echo "No release marker found. Expected commit message to include: Release x.y.z or Release x.y.z."
+            echo "SKIP_RELEASE=true" >> "$GITHUB_ENV"
           fi
 
       - name: Prevent duplicate release tags
+        if: env.SKIP_RELEASE != 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
@@ -44,6 +47,7 @@ jobs:
           fi
 
       - name: Zip JAR files from mods directory
+        if: env.SKIP_RELEASE != 'true'
         shell: bash
         run: |
           if [ ! -d mods ]; then
@@ -61,6 +65,7 @@ jobs:
           zip -j "$ZIP_NAME" mods/*.jar
 
       - name: Create GitHub release with zip asset
+        if: env.SKIP_RELEASE != 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
