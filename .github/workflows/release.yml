@@ -24,7 +24,7 @@ jobs:
           if [ -n "$match" ]; then
             version="$(printf '%s' "$match" | grep -Eo '[0-9]+\.[0-9]+\.[0-9]+' | head -n 1)"
             echo "VERSION=$version" >> "$GITHUB_ENV"
-            echo "TITLE=Release $version" >> "$GITHUB_ENV"
+            echo "TITLE=RawrCraft $version" >> "$GITHUB_ENV"
             echo "ZIP_NAME=mods-$version.zip" >> "$GITHUB_ENV"
           else
             echo "No release marker found. Expected commit message to include: Release x.y.z or Release x.y.z."
