@@ -1,0 +1,68 @@
+name: release
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  release-mods:
+    runs-on: ubuntu-latest
+    env:
+      COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Parse release version from commit message
+        shell: bash
+        run: |
+          if [[ "$COMMIT_MESSAGE" =~ ^Release[[:space:]]+([0-9]+\.[0-9]+\.[0-9]+)$ ]]; then
+            echo "VERSION=${BASH_REMATCH[1]}" >> "$GITHUB_ENV"
+            echo "TITLE=Release ${BASH_REMATCH[1]}" >> "$GITHUB_ENV"
+            echo "ZIP_NAME=mods-${BASH_REMATCH[1]}.zip" >> "$GITHUB_ENV"
+          else
+            echo "Commit message must be exactly: Release x.y.z" >&2
+            exit 1
+          fi
+
+      - name: Prevent duplicate release tags
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          if git ls-remote --tags origin "refs/tags/$VERSION" | grep -q "$VERSION"; then
+            echo "Tag '$VERSION' already exists. Refusing duplicate release." >&2
+            exit 1
+          fi
+          if gh release view "$VERSION" >/dev/null 2>&1; then
+            echo "Release '$VERSION' already exists. Refusing duplicate release." >&2
+            exit 1
+          fi
+
+      - name: Zip JAR files from mods directory
+        shell: bash
+        run: |
+          if [ ! -d mods ]; then
+            echo "mods directory not found." >&2
+            exit 1
+          fi
+
+          shopt -s nullglob
+          jars=(mods/*.jar)
+          if [ ${#jars[@]} -eq 0 ]; then
+            echo "No .jar files found in mods/." >&2
+            exit 1
+          fi
+
+          zip -j "$ZIP_NAME" mods/*.jar
+
+      - name: Create GitHub release with zip asset
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          gh release create "$VERSION" "$ZIP_NAME" --title "$TITLE" --notes "$TITLE"
