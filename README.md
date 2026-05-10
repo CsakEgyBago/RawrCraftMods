@@ -93,7 +93,21 @@ No major spoilers — just enough to know what to expect.
 
 **The Aether** — A heavenly dimension floating above the clouds, filled with unique mobs, dungeons, and loot. A classic.
 
+**Deep Aether** — An expansion to the Aether adding deeper, more dangerous zones and new content beyond the base dimension.
+
+**Aether Villages** — Adds villages and NPC settlements to the Aether dimension.
+
 **Twilight Forest** — A magical, ever-twilight dimension with a progression of bosses and themed areas to explore. One of the most content-rich mod dimensions out there.
+
+**Twilight Treehouses** — Adds treehouse structures to the Twilight Forest for more interesting exploration.
+
+**Twilight Forest: Do Not Venture** — Enforces Twilight Forest boss progression order, preventing sequence-breaking and keeping the experience intentional.
+
+**Twilight Forest Final Boss** — Adds a conclusive final boss encounter to round out the Twilight Forest storyline.
+
+**True Ending** — Adds a proper narrative ending sequence once the Twilight Forest is fully completed.
+
+**Twilight Aether** — A crossover mod linking the Twilight Forest and the Aether with shared content and encounters.
 
 **Dimensional Doors** — Adds mysterious doors that lead to pocket dimensions, rifts in space, and strange liminal corridors. A bit unsettling in the best way.
 
@@ -109,7 +123,19 @@ No major spoilers — just enough to know what to expect.
 
 **Gardens of the Dead** — Adds two new eerie Nether biomes filled with unique flora and fungi.
 
+**Nether Weather** — Adds dynamic weather events to the Nether dimension, making it more unpredictable and dangerous.
+
 **BCLib & WunderLib** — Libraries used by Better End and Gardens of the Dead to function.
+
+---
+
+## 🦖 Mobs & Wildlife
+
+**Alex's Mobs** — Adds over 80 real-world and fantasy creatures across all biomes and dimensions. Each mob has unique behaviours, drops, and interactions.
+
+**Alex's Caves** — Adds unique underground cave biomes, each with its own ecosystem, atmosphere, and creatures. A massive expansion to underground exploration.
+
+**Fowl Play** — Expands avian wildlife with new bird species that spawn naturally across various biomes.
 
 ---
 
@@ -117,7 +143,23 @@ No major spoilers — just enough to know what to expect.
 
 **Create** — A mechanical engineering mod built around rotating contraptions, conveyor belts, and automation. Deep and satisfying to learn.
 
+**Steam 'n' Rails** — Expands Create's transport system with trains, train stations, and full rail infrastructure.
+
+**Create: Enchantment Industry** — Adds machinery for automating enchanting, experience production, and disenchanting.
+
+**Create: New Age** — Brings electricity generation and electric motors to the Create ecosystem.
+
+**Create Addition** — Adds electrical components and generators that run on Create's rotational energy.
+
+**Create: Connected** — Adds more connected block types and mechanical parts that integrate with Create contraptions.
+
+**Copycats+** — Lets you copy the texture of any block onto Create's structural blocks for seamless aesthetic builds.
+
+**Create: Deco** — Decorative blocks and furniture designed to complement Create-themed industrial builds.
+
 **Tinkers' Construct** — A complete overhaul of tool and weapon crafting. Build custom tools from materials you choose, each with unique properties.
+
+**Tinkers with Enchants** — Allows Tinkers' Construct tools and weapons to receive vanilla enchantments.
 
 **Mantle** — Required library for Tinkers' Construct.
 
@@ -135,6 +177,12 @@ No major spoilers — just enough to know what to expect.
 
 **My Nether's Delight** — Farmer's Delight addon for the Nether. Turns Nether ingredients into proper food.
 
+**Aether's Delight** — A Farmer's Delight addon adding food and cooking recipes using Aether ingredients.
+
+**Twilight Delight** — Farmer's Delight addon themed around the Twilight Forest's flora and creatures.
+
+**Slice & Dice** — Bridges Farmer's Delight and Create, letting you automate food processing and crop harvesting with machines.
+
 ---
 
 ## 🛋️ Building & Decoration
@@ -142,6 +190,10 @@ No major spoilers — just enough to know what to expect.
 **Refurbished Furniture** — A wide collection of decorative furniture pieces. Chairs, tables, shelves, lamps — makes builds feel lived in.
 
 **Vanilla Backport** — Brings features from newer Minecraft versions back to 1.20.1. Mostly blocks and items you'd expect to already be in the game.
+
+**FXNT Storage** — Adds compact, stylish storage solutions including drawers and crates for better item organisation.
+
+**Advancement Frames** — Lets you display earned advancements as framed items mounted on walls.
 
 ---
 
@@ -152,6 +204,28 @@ No major spoilers — just enough to know what to expect.
 **Xaero's World Map** — Full-screen world map that fills in as you explore. Works hand-in-hand with the minimap.
 
 **WATut** — A lightweight waypoint and tutorial system to help orient new players.
+
+---
+
+## 🏛️ Structures
+
+**YUNG's Better Dungeons** — Completely redesigns vanilla dungeons with varied layouts, new rooms, and more content.
+
+**YUNG's Better Mineshafts** — Overhauls abandoned mineshafts with branching tunnels, new rooms, and improved loot.
+
+**YUNG's Better Nether Fortresses** — Redesigns Nether fortresses with more complex, interesting layouts.
+
+**YUNG's Better Ocean Monuments** — Revamps ocean monuments with more rooms, corridors, and structure.
+
+**YUNG's Better Strongholds** — Replaces vanilla strongholds with dramatically larger, more intricate builds.
+
+**YUNG's Better Desert Temples** — Overhauls desert temples with multi-floor interiors and better traps.
+
+**YUNG's Better Jungle Temples** — Redesigns jungle temples with more puzzles and a proper sense of discovery.
+
+**YUNG's Better Witch Huts** — Expands witch huts into proper, atmospheric swamp structures.
+
+**Gearsaw Palace** — Adds a unique dungeon structure for exploration and combat.
 
 ---
 
@@ -167,7 +241,29 @@ No major spoilers — just enough to know what to expect.
 
 ---
 
-## 🎨 Visual & Performance
+## 🎨 Visual Enhancements
+
+**3D Skin Layers** — Renders the outer layers of player skins in 3D instead of flat overlays. Looks much better up close.
+
+**Visuality** — Adds small particle effects to many interactions — hits, footsteps, item pickups, and more.
+
+**Particular** — More detailed particle effects for various environmental interactions.
+
+**Particle Rain** — Replaces the flat rain overlay with proper falling raindrop particles.
+
+**Wakes** — Adds realistic water wake effects behind boats as they move.
+
+**Waves** — Animates water surfaces with gentle, rolling wave motion.
+
+**Cool Rain** — Enhances rain visuals with splash effects on the ground and improved rendering.
+
+**Explosive Enhancement** — Makes explosions visually richer with debris, smoke, and fire particle effects.
+
+**Luminous Tag** — Makes name tags glow and visible at greater distances.
+
+---
+
+## ⚡ Performance
 
 **Embeddium** — A rendering optimisation mod (Sodium port for Forge). Significantly improves frame rates.
 
@@ -191,11 +287,35 @@ No major spoilers — just enough to know what to expect.
 
 ---
 
+## 🛠️ Utility
+
+**JEI (Just Enough Items)** — Shows crafting recipes and uses for every item in the game. Essential for modded play.
+
+**Jade** — Shows a tooltip with information about whatever block or entity you're looking at — health, contents, progress.
+
+**Jade Addons** — Extends Jade's tooltip support to cover more modded blocks and entities.
+
+**Clumps** — Groups XP orbs together into single entities. Reduces lag and makes XP collection cleaner.
+
+**Leaves Be Gone** — Instantly removes leaf blocks when their supporting log is cut, no waiting for decay.
+
+**Fancy Toasts** — Replaces vanilla advancement pop-ups with cleaner, more stylish notification toasts.
+
+**Multiplayer Bosses** — Scales boss health and difficulty based on how many players are nearby.
+
+**DiscCord** — Adds Discord rich presence so your current game status appears on your Discord profile.
+
+**Better Compatibility Checker** — Shows mod compatibility information in the mod list. Handy for debugging.
+
+---
+
 ## 🧰 Libraries & Dependencies
 
 These mods don't add content on their own but are required for other mods to function.
 
 - **Architectury** — Cross-platform mod library
+- **Athena** — Cosmetics and rendering library
+- **Citadel** — Animation and entity library used by Alex's Mobs
 - **Cloth Config** — Configuration screen framework
 - **CoroUtil** — Utility library
 - **CreativeCore** — Core library for Ambient Sounds and others
@@ -203,26 +323,9 @@ These mods don't add content on their own but are required for other mods to fun
 - **GeckoLib** — Animation library used by several mods
 - **GlitchCore** — Core library for various mods
 - **Kotlin for Forge** — Kotlin language runtime for mods written in Kotlin
+- **Moonlight Lib** — General-purpose library used by several mods
 - **Platform** — Mod utility library
-
----
-
-## 🤝 Social & Cosmetics
-
-**Essential** — Adds cosmetics, a friends list, and some social features directly in the game client.
-
-**Athena** — Cosmetics library used by Essential.
-
-**Playmate** — Multiplayer-focused features and enhancements.
-
----
-
-## 🛠️ Utility
-
-**JEI (Just Enough Items)** — Shows crafting recipes and uses for every item in the game. Essential for modded play.
-
-**Apotheosis** *(also listed above)* — Beyond enchanting, also adds useful quality-of-life improvements to spawners and other systems.
-
-**Clumps** — Groups XP orbs together into single entities. Reduces lag and makes XP collection cleaner.
-
-**Better Compatibility Checker** — Shows mod compatibility information in the mod list. Handy for debugging.
+- **Puzzles Lib** — Library used by Leaves Be Gone and other mods
+- **SmartBrainLib** — AI behaviour library used by Alex's Mobs
+- **Yet Another Config Lib** — Configuration library used by various mods
+- **YUNG's API** — Required library for all YUNG's structure mods
