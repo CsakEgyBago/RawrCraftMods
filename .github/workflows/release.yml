@@ -20,7 +20,7 @@ jobs:
       - name: Parse release version from commit message
         shell: bash
         run: |
-          match="$(printf '%s' "$COMMIT_MESSAGE" | tr -d '\r' | grep -Eo 'Release[[:space:]]+[0-9]+\.[0-9]+\.[0-9]+\.?' | head -n 1 || true)"
+          match="$(printf '%s' "$COMMIT_MESSAGE" | tr -d '\r' | grep -Eio 'release[[:space:]]+[0-9]+\.[0-9]+\.[0-9]+\.?' | head -n 1 || true)"
           if [ -n "$match" ]; then
             version="$(printf '%s' "$match" | grep -Eo '[0-9]+\.[0-9]+\.[0-9]+' | head -n 1)"
             echo "VERSION=$version" >> "$GITHUB_ENV"
